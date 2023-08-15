@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "poetry run uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload",
+    "lint": "poetry run flake8 app tests",
+    "lint:fix": "poetry run isort app tests && poetry run black app tests",
+    "clean": "rm -rf .pytest_cache htmlcov .coverage requirements.txt",
+    "test": "poetry run python -m pytest",
+    "requirements": "poetry export --without-hashes --format=requirements.txt > requirements.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "eslint.run": "onSave",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "flake8.args": ["--config=backend/.flake8"],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
