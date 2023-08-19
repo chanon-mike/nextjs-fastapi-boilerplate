@@ -11,7 +11,7 @@
     "lint:prettier": "prettier --check \"./**/*.{ts,tsx,js}\" --ignore-path ../.gitignore",
     "lint:fix": "npm run lint:js -- --fix && prettier --write \"./**/*.{ts,tsx,js}\" --ignore-path ../.gitignore",
     "start": "next start",
-    "typecheck": "npm run hcm && tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
